@@ -1,24 +1,5 @@
 # hdvll.com
 
-## Project setup
-```
-npm install
-```
+### Details
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Personal website for Magnus Hedvall to show off my work. Designed in Figma and built with Vue.
