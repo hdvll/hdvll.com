@@ -162,7 +162,7 @@
           </div>
           <div class="project__content">
             <div class="project__description">
-              Website for the housing community Ängslyckan in Enköping.
+              Website for the housing cooperative Ängslyckan in Enköping.
               Residents can login using email and password provided and managed
               on the site by administrators of the house community board.
               Residents can view news and upcoming events and admins can manage
@@ -422,10 +422,13 @@ export default {
     }
 
     & img {
-      width: 90%;
-      max-width: 1300px;
-      height: auto;
-      border: 2px solid #fff;
+      background: #000;
+      width: 80%;
+      height: 80%;
+      max-width: 1067px;
+      max-height: 800px;
+      object-fit: contain;
+      border: 1px solid #fff;
     }
   }
 
@@ -487,6 +490,7 @@ export default {
           width: 27%;
           max-width: 150px;
           max-height: 100px;
+          object-fit: cover;
           cursor: pointer;
           border: 1px solid #fff;
           transition: all 200ms ease-in-out;
@@ -571,6 +575,13 @@ export default {
 @media screen and (max-width: 964px) {
   .projects {
     width: 100%;
+
+    .imageModal {
+      & img {
+        width: 80%;
+        height: auto;
+      }
+    }
 
     .header {
       h1 {
