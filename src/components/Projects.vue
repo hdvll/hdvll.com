@@ -417,18 +417,18 @@ export default {
     width: 100vw;
 
     & svg {
+      margin-top: -3rem;
       margin-bottom: 1rem;
       cursor: pointer;
     }
 
     & img {
-      background: #000;
+      background: transparent;
       width: 80%;
-      height: 80%;
-      max-width: 1067px;
-      max-height: 800px;
-      object-fit: contain;
-      border: 1px solid #fff;
+      height: auto;
+      max-width: 1200px;
+      max-height: 80%;
+      object-fit: scale-down;
     }
   }
 

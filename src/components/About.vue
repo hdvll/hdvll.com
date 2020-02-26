@@ -41,6 +41,22 @@
                 />
               </svg>
             </a>
+            <a href="https://dev.to/hdvll" target="_blank">
+              <svg
+                width="31"
+                height="30"
+                viewBox="0 0 31 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.04333 11.805C7.8221 11.6253 7.54818 11.5229 7.26333 11.5133H6.095V18.51H7.26333C7.54871 18.5006 7.82319 18.3981 8.045 18.2183C8.30333 18.0233 8.43333 17.7317 8.43333 17.3433V12.68C8.435 12.2917 8.30167 12 8.04333 11.805V11.805ZM27.06 0H2.94C1.31833 0 0.00333333 1.31167 0 2.93333V27.0667C0.00333333 28.6883 1.31833 30 2.94 30H27.0617C28.6833 30 29.9983 28.6883 30.0017 27.0667V2.93333C29.9995 2.1546 29.6886 1.40851 29.1371 0.858646C28.5857 0.308777 27.8387 -3.1247e-06 27.06 0V0ZM10.325 17.3567C10.325 18.615 9.54833 20.525 7.08833 20.52H3.98167V9.44167H7.15333C9.52667 9.44167 10.3233 11.3483 10.325 12.6067V17.3567ZM17.0667 11.42H13.5V13.9933H15.6817V15.9733H13.5V18.545H17.07V20.525H12.9067C12.5475 20.534 12.1996 20.3999 11.9392 20.1524C11.6789 19.9049 11.5275 19.5641 11.5183 19.205V10.8283C11.5098 10.4695 11.644 10.122 11.8915 9.86198C12.139 9.602 12.4795 9.45084 12.8383 9.44167H17.07L17.0667 11.42V11.42ZM24.0083 19.14C23.1233 21.1983 21.54 20.79 20.8317 19.14L18.2517 9.44333H20.4333L22.4217 17.0583L24.4017 9.44333H26.585L24.0083 19.14V19.14Z"
+                  fill="white"
+                  fill-opacity="0.4"
+                />
+              </svg>
+            </a>
+
             <a href="https://www.twitter.com/hedvallmagnus" target="_blank">
               <svg
                 width="38"
@@ -169,6 +185,11 @@ export default {
       align-items: center;
       color: #fff;
 
+      & img {
+        width: 300px;
+        height: auto;
+      }
+
       & h4 {
         margin-top: 1rem;
         font-size: 1.8rem;
@@ -182,7 +203,7 @@ export default {
       & .about-me__social {
         display: flex;
         justify-content: space-between;
-        width: 50%;
+        width: 70%;
 
         & svg path {
           transition: all 300ms ease-in-out;
@@ -234,6 +255,7 @@ export default {
 
     .about-me {
       flex-direction: column;
+      margin: 4rem 1rem 0 1rem;
 
       &__left {
         margin-right: 0;
@@ -242,7 +264,7 @@ export default {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
         & img {
-          width: 250px;
+          width: 220px;
           height: auto;
         }
 
@@ -251,7 +273,7 @@ export default {
         }
 
         & .about-me__social {
-          width: 180px;
+          width: 220px;
         }
       }
 
