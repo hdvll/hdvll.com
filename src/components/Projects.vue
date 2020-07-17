@@ -126,65 +126,40 @@
         </div>
         <div class="project__card">
           <div class="project__screenshots">
-            <h2>BRF Ängslyckan</h2>
+            <h2>Eventr</h2>
             <div class="screenshots" v-lazy-container="{ selector: 'img' }">
               <img
-                :data-src="screenshots.brf_angslyckan_1"
-                alt="BRF Ängslyckan screenshot"
-                @click="
-                  showScreenshot(
-                    'brf-angslyckan_1.png',
-                    'BRF Ängslyckan screenshot'
-                  )
-                "
+                :data-src="screenshots.eventr_1"
+                alt="Eventr screenshot"
+                @click="showScreenshot('eventr_1.png', 'Eventr screenshot')"
               />
               <img
-                :data-src="screenshots.brf_angslyckan_2"
-                alt="BRF Ängslyckan screenshot"
-                @click="
-                  showScreenshot(
-                    'brf-angslyckan_2.png',
-                    'BRF Ängslyckan screenshot'
-                  )
-                "
+                :data-src="screenshots.eventr_2"
+                alt="Eventr screenshot"
+                @click="showScreenshot('eventr_2.png', 'Eventr screenshot')"
               />
               <img
-                :data-src="screenshots.brf_angslyckan_3"
-                alt="BRF Ängslyckan screenshot"
-                @click="
-                  showScreenshot(
-                    'brf-angslyckan_3.png',
-                    'BRF Ängslyckan screenshot'
-                  )
-                "
+                :data-src="screenshots.eventr_3"
+                alt="Eventr screenshot"
+                @click="showScreenshot('eventr_3.png', 'Eventr screenshot')"
               />
             </div>
           </div>
           <div class="project__content">
             <div class="project__description">
-              Website for the housing cooperative Ängslyckan in Enköping.
-              Residents can login using email and password provided and managed
-              on the site by administrators of the house community board.
-              Residents can view news and upcoming events and admins can manage
-              residents, post, edit and delete news and events and upload
-              documents. <em>Work in progress</em>
+              Small demo site where I set up a fictional site for selling events
+              like skydiving or getaway weekends. The site was build in Svelte
+              with a central store to hold the state of the cart and total price
+              of selected items/events.
             </div>
           </div>
           <div class="project__stack">
             <span>
-              <img src="@/assets/icons/vue.svg" />
-              Vue
-            </span>
-            <span>
-              <img src="@/assets/icons/vuetify.svg" />
-              Vuetify
-            </span>
-            <span>
-              <img src="@/assets/icons/firebase.svg" />
-              Firebase
+              <img src="@/assets/icons/svelte.svg" />
+              Svelte
             </span>
             <a
-              href="https://github.com/hdvll/brf-angslyckan"
+              href="https://github.com/hdvll/eventr"
               target="_blank"
               class="github"
             >
@@ -362,33 +337,33 @@
 
 <script>
 export default {
-  name: 'Projects',
+  name: "Projects",
   data() {
     return {
       imageModal: false,
-      image: '',
-      siteName: '',
+      image: "",
+      siteName: "",
       screenshots: {
-        brf_angslyckan_1: require('../assets/screenshots/brf-angslyckan_1.png'),
-        brf_angslyckan_2: require('../assets/screenshots/brf-angslyckan_2.png'),
-        brf_angslyckan_3: require('../assets/screenshots/brf-angslyckan_3.png'),
-        d2stats_1: require('../assets/screenshots/d2stats_1.png'),
-        d2stats_2: require('../assets/screenshots/d2stats_2.png'),
-        d2stats_3: require('../assets/screenshots/d2stats_3.png'),
-        firebase_auth_demo_1: require('../assets/screenshots/firebase-auth-demo_1.png'),
-        firebase_auth_demo_2: require('../assets/screenshots/firebase-auth-demo_2.png'),
-        firebase_auth_demo_3: require('../assets/screenshots/firebase-auth-demo_3.png'),
-        firebase_auth_demo_4: require('../assets/screenshots/firebase-auth-demo_4.png')
+        eventr_1: require("../assets/screenshots/eventr_1.png"),
+        eventr_2: require("../assets/screenshots/eventr_2.png"),
+        eventr_3: require("../assets/screenshots/eventr_3.png"),
+        d2stats_1: require("../assets/screenshots/d2stats_1.png"),
+        d2stats_2: require("../assets/screenshots/d2stats_2.png"),
+        d2stats_3: require("../assets/screenshots/d2stats_3.png"),
+        firebase_auth_demo_1: require("../assets/screenshots/firebase-auth-demo_1.png"),
+        firebase_auth_demo_2: require("../assets/screenshots/firebase-auth-demo_2.png"),
+        firebase_auth_demo_3: require("../assets/screenshots/firebase-auth-demo_3.png"),
+        firebase_auth_demo_4: require("../assets/screenshots/firebase-auth-demo_4.png")
       }
     };
   },
   methods: {
     goToHome() {
-      this.$emit('scrollToHome');
+      this.$emit("scrollToHome");
     },
     showScreenshot(image, siteName) {
       if (!this.imageModal) {
-        this.image = require('../assets/screenshots/' + image);
+        this.image = require("../assets/screenshots/" + image);
         this.siteName = siteName;
         this.imageModal = true;
       }
